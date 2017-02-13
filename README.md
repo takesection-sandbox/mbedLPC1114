@@ -65,6 +65,8 @@ lpc21isp -control -bin .pioenvs/lpc1114fn28/firmware.bin \
 
 ![LPC1114](LPC1114.png)
 
+DTRのある [SparkFun USB to Serial Breakout - FT232RL](https://www.sparkfun.com/products/12731) 等がよいと思います
+
 # 参考URL
 
 [platformio - LPC1114](https://lowreal.net/2016/02/17/3)
