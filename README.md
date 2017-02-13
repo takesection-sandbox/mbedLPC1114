@@ -53,6 +53,10 @@ lpc21isp -control -bin .pioenvs/lpc1114fn28/firmware.bin \
     /dev/tty.usbserial-A601FBW8 115200 48000
 ```
 
+## ブレッドボード
+
+[fritzing](http://fritzing.org/home/)
+
 ![LPC1114](LPC1114.png)
 
 # 参考URL
