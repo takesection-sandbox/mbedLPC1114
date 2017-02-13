@@ -63,8 +63,8 @@ lpc21isp -control -bin .pioenvs/lpc1114fn28/firmware.bin \
 
 ![LPC1114](LPC1114.png)
 
-RTSのある [SparkFun USB to Serial Breakout - FT232RL](https://www.sparkfun.com/products/12731) 等がよいと思います
-[fritzing](http://fritzing.org/home/)
+* RTSのある [SparkFun USB to Serial Breakout - FT232RL](https://www.sparkfun.com/products/12731) 等がよいと思います
+* [fritzing](http://fritzing.org/home/)
 
 # 参考URL
 
