@@ -2,8 +2,6 @@
 
 USB serial を使って、LPC1114FN28 に書き込む
 
-[lpc21isp](https://sourceforge.net/projects/lpc21isp/)
-
 | USB Serial | LPC1114FN28  |
 |:-----------|:-------------|
 | RTS        | PIO0_1(dp24) |
@@ -15,6 +13,8 @@ USB serial を使って、LPC1114FN28 に書き込む
 
 ## プロジェクトの作成
 
+[platformio](http://platformio.org/) を使ってビルドします
+
 ```
 $ platformio init --board=lpc1114fn28
 ```
@@ -23,7 +23,7 @@ $ platformio init --board=lpc1114fn28
 
 src/main.cpp
 
-```
+```cpp
 #include "mbed.h"
 
 DigitalOut myled(LED1);
@@ -38,6 +38,12 @@ int main() {
 }
 ```
 
+## コンパイル
+
+```
+$ platformio run
+```
+
 ## 書き込み
 
 USB シリアルのデバイスを確認(macOS)
@@ -46,14 +52,14 @@ USB シリアルのデバイスを確認(macOS)
 ls /dev/tty.usbserial*
 ```
 
-バイナリイメージを書き込む
+[lpc21isp](https://sourceforge.net/projects/lpc21isp/) を使ってバイナリイメージを書き込む
 
 ```
 lpc21isp -control -bin .pioenvs/lpc1114fn28/firmware.bin \
     /dev/tty.usbserial-A601FBW8 115200 48000
 ```
 
-## ブレッドボード
+## 参考図ブレッドボード
 
 [fritzing](http://fritzing.org/home/)
 
